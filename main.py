@@ -1,7 +1,6 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 # from telegram.ext.ContextTypes.params import context
 from telegram import ParseMode, Bot
-from telegram_bot_pagination import InlineKeyboardPaginator
 import requests
 import bs4
 import os
