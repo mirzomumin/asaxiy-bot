@@ -6,7 +6,7 @@ import bs4
 import os
 
 
-PORT = int(os.environ.get('PORT', 5000))
+PORT = int(os.environ.get('PORT', 80))
 TOKEN = '5377910834:AAGE7hps1270kUgNFM07cQK00q7eFNpdtOk'
 
 
@@ -74,8 +74,8 @@ def main():
 
 	updater.start_webhook(listen="0.0.0.0",
                           port=int(PORT),
-                          url_path=TOKEN)
-	updater.bot.setWebhook('https://bot-asaxiy.herokuapp.com/' + TOKEN)
+                          url_path=TOKEN,
+                          webhook_url = 'https://bot-asaxiy.herokuapp.com/' + TOKEN)
 	updater.idle()
 
 
